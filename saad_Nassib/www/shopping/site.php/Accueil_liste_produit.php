@@ -1,6 +1,15 @@
 <?php
 // Inclusion du fichier de configuration
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "ecom1_project";
+
+// Créer une connexion
+$conn = new mysqli($servername, $username, $password, $database);
+session_start();
 include('config.php');
+
 
 $produits = "";
 
